@@ -1,0 +1,21 @@
+.Navigation {
+    height: 60%;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 0;
+    
+}
+
+ul li {
+    border: 1px solid grey;
+    width: 80%;
+    height: 5%;
+    cursor: pointer;
+}
