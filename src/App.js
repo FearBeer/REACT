@@ -4,6 +4,8 @@ import LeftSideBar from './LeftSideBar/LeftSideBar.jsx'
 import UserInfo from './UserInfo/UserInfo.jsx'
 import Navigation from './Navigation/Navigation.jsx'
 import UserPage from './UserPage/UserPage.jsx'
+import Counter from './Component/Counter';
+
 
 
 function App() {
@@ -46,10 +48,12 @@ function App() {
     <div className="App">
       <LeftSideBar>
         <UserInfo avatarSrc={user.avatarSrc} userAddress={user.address} name = {user.name}/>
-        <Navigation/>
-        
+        <Navigation/>        
       </LeftSideBar>
-      <UserPage user={user}/>
+      
+      <UserPage user={user}>
+      <Counter />
+      </UserPage>
     </div>
   );
 }
